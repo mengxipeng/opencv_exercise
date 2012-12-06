@@ -1,0 +1,40 @@
+
+a. check wether i get same result with k = 10 ( same, computer vision is promised)
+
+1. try to select a good k
+2. try to recover every image with matlab
+3. try to binarize the images , and apply the knn algorithm.( failed )
+
+4. try to neural network method
+5. try to PCA reduce 
+6. try to cross validation
+
+7. try various features 
+8. try deep learning
+
+the best k is 3 with full data set
+
+b. change the directory structe
+    algo  -- store all file related to algorithms, all of C++
+         this directory contains:
+            1) some cc source code file for algorithm
+            2) a Makefile to compile all cc files
+         these algorithms will call opencv library, fann library or some other open source c library
+         I will try to write my own version of algorithm.
+            
+    app   -- store all file related to applications, all of C 
+         this directory contains:
+            1) some cc source code file for some application. Try to do some work dealing with the data sets
+            2) a Makefile to compile all cc files
+
+    utils -- store all file related to utils, all of C
+
+    mex   -- store all file related to mexs,  all of C
+
+    inc   -- store all header file for C
+
+    mat   -- store all matlab file, for test script 
+            all test will fun in this Directory
+
+    data  -- store all source data set
+    res   -- store all result 
